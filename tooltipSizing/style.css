@@ -17,3 +17,13 @@
     fill: none;
     pointer-events: all;
 }
+
+.tooltip-inner {
+  min-width: 150px;
+  max-width: 250px;
+  height: 100px;
+}
+
+.tooltip-inner text {
+  text-align: center;
+}

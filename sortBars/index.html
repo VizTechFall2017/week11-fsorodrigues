@@ -18,7 +18,12 @@
 
 <body>
 
-    <input type="range" min="1987" max="2007" value="1" class="slider" id="mySlider" oninput="sliderMoved(value)">
+    <input type="radio" id="radioButton1" value="alphabetical" onchange="radioChange(value)" name="sort" >
+    <label for="radioButton1">Sort Alphabetical</label>
+    <input type="radio" id="radioButton2" value="descending" onchange="radioChange(value)" name="sort" checked>
+    <label for="radioButton2">Sort Descending</label>
+
+    <br><input type="range" min="1987" max="2007" value="1" class="slider" id="mySlider" oninput="sliderMoved(value)">
 
     <br>
 

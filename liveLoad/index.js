@@ -11,10 +11,21 @@ var svg = d3.select('svg')
 var color = d3.scaleOrdinal(d3.schemeCategory20);
 
 //import the data from the .csv file
-d3.csv('./foodImports_AE.csv', function(dataIn){
+d3.csv("./foodImports_AE.csv", function(dataIn){
 
     console.log(dataIn);
 
     //do your first drawing here
 
 });
+
+function reloadData(inputName) {
+
+  d3.csv("./foodImports_" + inputName + ".csv", function(error, newData) {
+    console.log(newData);
+  });
+};
+
+function buttonClicked(value) {
+  reloadData(value);
+};
